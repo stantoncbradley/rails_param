@@ -196,13 +196,13 @@ describe RailsParam::Param do
       it 'typecasts array elements' do
         allow(controller).to receive(:params).and_return({'array' => ['1', '2']})
         controller.param! :array, Array do |a, i|
-          a.param! [i], Integer, required: true
+          a.param! i, Integer, required: true
         end
         expect(controller.params['array'][0]).to be_a Integer
         expect(controller.params['array'][1]).to be_a Integer
       end
 
-      it 'validates nested array elements' do
+      it 'validates array of hashes' do
         params = {'array' => [{'object'=>{ 'num' => '1', 'float' => '1.5' }},{'object'=>{ 'num' => '2', 'float' => '2.3' }}] }
         allow(controller).to receive(:params).and_return(params)
         controller.param! :array, Array do |a|

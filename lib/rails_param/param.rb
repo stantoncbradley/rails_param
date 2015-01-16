@@ -13,7 +13,7 @@ module RailsParam
     end
 
     def param!(name, type, options = {})
-      name = name.to_s unless name.is_a? Array # keep index for validating elements
+      name = name.to_s unless name.is_a? Integer # keep index for validating elements
 
       return unless params.member?(name) || options[:default].present? || options[:required]
 
@@ -26,7 +26,7 @@ module RailsParam
           if type == Array
             params[name].each_with_index do |element, i|
               controller = RailsParam::Param::MockController.new
-              controller.params = element.is_a?(Hash) ? element : { [i] => element } # supply key for value unless value is hash
+              controller.params = element.is_a?(Hash) ? element : { i => element } # supply index as key unless value is hash
               yield(controller, i)
             end
           else
