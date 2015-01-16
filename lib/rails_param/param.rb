@@ -25,9 +25,15 @@ module RailsParam
         if block_given?
           if type == Array
             params[name].each_with_index do |element, i|
-              controller = RailsParam::Param::MockController.new
-              controller.params = element.is_a?(Hash) ? element : { i => element } # supply index as key unless value is hash
-              yield(controller, i)
+              if element.is_a?(Hash)
+                controller = RailsParam::Param::MockController.new
+                controller.params = element
+                yield(controller, i)
+              else
+                controller = RailsParam::Param::MockController.new
+                controller.params = { i => element } # supply index as key unless value is hash
+                params[name][i] = yield(controller, i)
+              end
             end
           else
             controller = RailsParam::Param::MockController.new
@@ -35,6 +41,7 @@ module RailsParam
             yield(controller)
           end
         end
+        params[name]
       rescue InvalidParameterError => exception
         exception.param ||= name
         exception.options ||= options
