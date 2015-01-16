@@ -13,7 +13,7 @@ module RailsParam
     end
 
     def param!(name, type, options = {})
-      name = name.to_s
+      name = name.to_s unless name.is_a? Array # keep index for validating elements
 
       return unless params.member?(name) || options[:default].present? || options[:required]
 
@@ -23,9 +23,17 @@ module RailsParam
         params[name] = options[:transform].to_proc.call(params[name]) if params[name] and options[:transform]
         validate!(params[name], options)
         if block_given?
-          controller = RailsParam::Param::MockController.new
-          controller.params = params[name]
-          yield(controller)
+          if type == Array
+            params[name].each_with_index do |element, i|
+              controller = RailsParam::Param::MockController.new
+              controller.params = element.is_a?(Hash) ? element : { [i] => element } # supply key for value unless value is hash
+              yield(controller, i)
+            end
+          else
+            controller = RailsParam::Param::MockController.new
+            controller.params = params[name]
+            yield(controller)
+          end
         end
       rescue InvalidParameterError => exception
         exception.param ||= name
