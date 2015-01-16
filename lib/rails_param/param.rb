@@ -12,7 +12,7 @@ module RailsParam
       attr_accessor :params
     end
 
-    def param!(name, type, options = {})
+    def param!(name, type, options = {}, &block)
       name = name.to_s unless name.is_a? Integer # keep index for validating elements
 
       return unless params.member?(name) || options[:default].present? || options[:required]
@@ -26,19 +26,13 @@ module RailsParam
           if type == Array
             params[name].each_with_index do |element, i|
               if element.is_a?(Hash)
-                controller = RailsParam::Param::MockController.new
-                controller.params = element
-                yield(controller, i)
+                recurse element, &block
               else
-                controller = RailsParam::Param::MockController.new
-                controller.params = { i => element } # supply index as key unless value is hash
-                params[name][i] = yield(controller, i)
+                params[name][i] = recurse({ i => element }, i, &block) # supply index as key unless value is hash
               end
             end
           else
-            controller = RailsParam::Param::MockController.new
-            controller.params = params[name]
-            yield(controller)
+            recurse params[name], &block
           end
         end
         params[name]
@@ -68,6 +62,13 @@ module RailsParam
     # end
 
     private
+
+    def recurse(params, index = nil)
+      raise InvalidParameterError, 'no block given' unless block_given?
+      controller = RailsParam::Param::MockController.new
+      controller.params = params
+      yield(controller, index)
+    end
 
     def coerce(param, type, options = {})
       begin

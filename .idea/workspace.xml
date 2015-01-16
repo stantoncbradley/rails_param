@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ec4ad18a-9d74-4121-8654-3baa570e0e63" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/rails_param/param.rb" afterPath="$PROJECT_DIR$/lib/rails_param/param.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="rails_param.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -18,10 +17,10 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/rails_param@Run_spec__param_spec___rails_param.coverage" NAME="Run spec 'param_spec': rails_param Coverage Results" MODIFIED="1414530697892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rails_param" />
-    <SUITE FILE_PATH="coverage/rails_param@RailsParam__Param_param__validating_array_elements__rails_param.coverage" NAME="RailsParam::Param.param! validating array elements: rails_param Coverage Results" MODIFIED="1421428999239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rails_param" />
+    <SUITE FILE_PATH="coverage/rails_param@RailsParam__Param_param__validating_array_elements__rails_param.coverage" NAME="RailsParam::Param.param! validating array elements: rails_param Coverage Results" MODIFIED="1421429652199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rails_param" />
     <SUITE FILE_PATH="coverage/rails_param@Run_spec__rails_integration_spec___rails_param.coverage" NAME="Run spec 'rails_integration_spec': rails_param Coverage Results" MODIFIED="1414533284735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rails_param" />
     <SUITE FILE_PATH="coverage/rails_param@Run_spec__rails_param_spec___rails_param.coverage" NAME="Run spec 'rails_param_spec': rails_param Coverage Results" MODIFIED="1414529174516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rails_param" />
-    <SUITE FILE_PATH="coverage/rails_param@RailsParam__Param__rails_param.coverage" NAME="RailsParam::Param: rails_param Coverage Results" MODIFIED="1421427819575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rails_param" />
+    <SUITE FILE_PATH="coverage/rails_param@RailsParam__Param__rails_param.coverage" NAME="RailsParam::Param: rails_param Coverage Results" MODIFIED="1421429698047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rails_param" />
     <SUITE FILE_PATH="coverage/rails_param@All_tests_in_spec__rails_param.coverage" NAME="All tests in spec: rails_param Coverage Results" MODIFIED="1414529131732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spec" MODULE_NAME="rails_param" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -38,8 +37,8 @@
             <file leaf-file-name="param_spec.rb" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/spec/rails_param/param_spec.rb">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.33333334" vertical-offset="2933" max-vertical-offset="5070">
-                    <caret line="213" column="0" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
+                  <state vertical-scroll-proportion="0.33333334" vertical-offset="2738" max-vertical-offset="5070">
+                    <caret line="200" column="0" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
                     <folding />
                   </state>
                 </provider>
@@ -59,8 +58,8 @@
       <file leaf-file-name="param.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/rails_param/param.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6958955" vertical-offset="167" max-vertical-offset="2100">
-              <caret line="36" column="15" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
+            <state vertical-scroll-proportion="0.7389163" vertical-offset="60" max-vertical-offset="2115">
+              <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -217,7 +216,7 @@
     <property name="LayoutCode.rearrangeEntriesRuby" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
-  <component name="RunManager" selected="RSpec.RailsParam::Param.param! validating array elements: rails_param">
+  <component name="RunManager" selected="RSpec.RailsParam::Param: rails_param">
     <configuration default="false" name="Run spec 'rails_integration_spec': rails_param" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="rails_param" />
@@ -494,8 +493,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="RSpec.RailsParam::Param.param! validating array elements: rails_param" />
-        <item index="1" class="java.lang.String" itemvalue="RSpec.RailsParam::Param: rails_param" />
+        <item index="0" class="java.lang.String" itemvalue="RSpec.RailsParam::Param: rails_param" />
+        <item index="1" class="java.lang.String" itemvalue="RSpec.RailsParam::Param.param! validating array elements: rails_param" />
         <item index="2" class="java.lang.String" itemvalue="RSpec.Run spec 'rails_param_spec': rails_param" />
         <item index="3" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.All tests in spec: rails_param" />
         <item index="4" class="java.lang.String" itemvalue="RSpec.Run spec 'rails_integration_spec': rails_param" />
@@ -526,7 +525,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17252396" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43992054" sideWeight="0.7736954" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.367428" sideWeight="0.7736954" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969216" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3733863" sideWeight="0.22630458" order="7" side_tool="true" content_ui="tabs" />
@@ -559,18 +558,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/spec/rails_param/param_spec.rb</url>
-          <line>200</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/spec/rails_param/param_spec.rb</url>
-          <line>213</line>
-          <option name="timeStamp" value="50" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="51" />
     </breakpoint-manager>
     <watches-manager>
@@ -917,16 +904,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/rails_param/param.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6958955" vertical-offset="167" max-vertical-offset="2100">
-          <caret line="36" column="15" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.7389163" vertical-offset="60" max-vertical-offset="2115">
+          <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/rails_param/param_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="2933" max-vertical-offset="5070">
-          <caret line="213" column="0" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="2738" max-vertical-offset="5070">
+          <caret line="200" column="0" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
           <folding />
         </state>
       </provider>
