@@ -5,9 +5,15 @@ _Parameter Validation & Type Coercion for Rails_
 
 ## Introduction
 
-Rails makes it easy to deal with HTTP parameters when they are linked to a model or an ActiveModel class.
+This library is handy if you want to validate a few numbers of parameters directly inside your controller.
 
-If you are building a complex search form, don’t hesitate to link it to a non-persistent ActiveModel class, like ActiveModel::Model. There are many resources on the Web to learn this kind of good practices, and stay in the “thin controller” rule.
+For example : you are building a search action and want to validate that the `sort` parameter is set and only set to something like `desc` or `asc`.
+
+## Important
+
+This library should not be used to validate a large number of parameters or parameters sent via a form or namespaced (like `params[:user][:first_name]`). There is already a great framework included in Rails (ActiveModel::Model) which can be used to create virtual classes with all the validations you already know and love from Rails. Remember to always try to stay in the “thin controller” rule.
+
+See [this](http://blog.remarkablelabs.com/2012/12/activemodel-model-rails-4-countdown-to-2013) page to see an example on how to build a contact form using ActiveModel::Model.
 
 But sometimes, it’s not practical to create an external class just to validate and convert a few parameters. In this case, you may use this gem. It allows you to easily do validations and conversion of the parameters directly in your controller actions using a simple method call.
 
@@ -84,14 +90,6 @@ Use the `transform` option to take even more of the business logic of parameter 
 ```ruby
 param! :order, String, in: ["ASC", "DESC"], transform: :upcase, default: "ASC"
 param! :offset, Integer, min: 0, transform: lambda {|n| n - (n % 10)}
-```
-
-### Date Options ###
-
-Pass the `mmddyyyy: true` option when validating dates when expecting strings in 'MM/DD/YYY' format.
-
-```ruby
-param! :date_of_birth, Date, mmddyyyy: true
 ```
 
 ### Nested Attributes
