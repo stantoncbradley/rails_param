@@ -43,6 +43,14 @@ describe RailsParam::Param do
         end
       end
 
+      context "with a false value" do
+        it "defaults to the value" do
+          allow(controller).to receive(:params).and_return({})
+          controller.param! :word, :boolean, default: false
+          expect(controller.params["word"]).to eql(false)
+        end
+      end
+
       context "with a block" do
         it "defaults to the block value" do
           allow(controller).to receive(:params).and_return({})
